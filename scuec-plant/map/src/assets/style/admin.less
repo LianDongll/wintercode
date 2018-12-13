@@ -1,0 +1,156 @@
+#admin {
+  height: 100%;
+  background-color: @main-bg-color;
+  .menu {
+    border-right: none;
+  }
+  .header {
+    text-align: center;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 0 3px 0 rgba(0, 0, 0, 0.04);
+  }
+}
+#admin-content {
+  height: 100%;
+}
+.admin-aside {
+  background-color: @aside-bg-color;
+}
+.avatar-container {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+.user-avatar {
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.table-expand label {
+  width: 90px;
+  text-align: center !important;
+  color: #99a9bf;
+}
+.delBtn {
+  color: @danger-color;
+}
+.btnContainer {
+  text-align: right;
+  margin: 0;
+}
+
+.header {
+  background-color: #fff;
+}
+
+.plantM-container {
+  background-color: #fff;
+
+  .plantM-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+// transition
+
+.slide-fade-leave-active,
+.slide-fade-enter-active {
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.slide-fade-enter {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+
+.slide-fade-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+.chart-container {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.part-container {
+  background-color: #fff;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+.part-header {
+  border-bottom: solid 1px #ededed;
+  padding-bottom: 8px;
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.primary-icon {
+  color: @primary-color;
+  font-weight: bolder;
+}
+
+.plant-Number {
+  font-weight: bolder;
+  font-size: 28px;
+  color: @primary-color;
+}
+
+.vLine {
+  width: 2px;
+  height: 100px;
+  background-color: #ededed;
+}
+
+.addImg-container {
+  background-color: #fff;
+  min-height: 100%;
+}
+
+.addImg-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  text-align: center;
+  .name-select {
+    width: 400px;
+  }
+}
+
+.addImg-main {
+  text-align: center;
+}
+
+.img-preview-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: space-around;
+}
+
+.img-card-container {
+  width: 30%;
+  margin: 20px 0;
+}
+
+.img-bottom-blur {
+  color: #ffffff;
+  background-color: @danger-color;
+}
+
+.img-bottom-deformation {
+  color: #ffffff;
+  background-color: @warning-color;
+}
+
+.img-bottom-common {
+  background-color: #fff;
+}
